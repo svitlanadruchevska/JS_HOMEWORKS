@@ -7,6 +7,7 @@ let name = 'Jonh';
 admin = name;
 console.log(admin);
 console.log(name);
+alert(admin);
 
 //task_2//
 
