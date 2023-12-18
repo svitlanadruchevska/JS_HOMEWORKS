@@ -2,8 +2,8 @@
 
 //task_1//
 
+const name = 'Jonh';
 let admin;
-let name = 'Jonh';
 admin = name;
 console.log(admin);
 console.log(name);
