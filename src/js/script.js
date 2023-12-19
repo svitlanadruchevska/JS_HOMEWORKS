@@ -6,7 +6,7 @@ const firstText = prompt('Please, enter your text...');
 const secondText = prompt('and some more...');
 const thirdText = prompt("and just a little more. Thank's a lot!");
 
-alert(firstText + secondText +thirdText);
+alert(firstText + ' ' + secondText + ' '+thirdText);
 
 //task_2
 
