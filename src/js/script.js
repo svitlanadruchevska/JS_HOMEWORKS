@@ -67,18 +67,11 @@ const person2 = {
 
 console.log(person1===person2);
 
-function compare (person1, person2){
-        if (person1.length === person2.length) {
-        return true;
-        }
-        else{
-            if (person1.length !== person2.length) {
-                return false;
-            }
-        }
-}
+if (JSON.stringify(person1) === JSON.stringify(person2))
+console.log(true);
+ else
+     console.log(false);
 
-console.log(compare(person1, person2));
 
 //task5
 
