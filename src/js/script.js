@@ -72,7 +72,6 @@ console.log(true);
  else
      console.log(false);
 
-
 //task5
 
 console.log('task5');
