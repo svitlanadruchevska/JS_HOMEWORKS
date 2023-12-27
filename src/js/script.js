@@ -65,8 +65,6 @@ const person2 = {
     age: 32,
 };
 
-console.log(person1===person2);
-
 if (JSON.stringify(person1) === JSON.stringify(person2))
 console.log(true);
  else
