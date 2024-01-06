@@ -3,7 +3,9 @@
 const userNum = prompt('Введіть число');
 
 if (!isNaN(userNum)) {
+
     let wordCorrect;
+
     if (+userNum === 1 || userNum % 10 === 1 && userNum % 100 !== 11) {
         wordCorrect = 'рік';
     } else if ((userNum >= 2 && userNum <= 4) || (userNum % 10 >= 2 && userNum % 10 <= 4) && (userNum % 100 < 10 || userNum % 100 >= 20)) {
@@ -13,7 +15,7 @@ if (!isNaN(userNum)) {
     }
 
     alert(userNum + ' ' + wordCorrect);
-} else {
-
+}
+else {
     alert('Будь ласка, введіть число.');
 }
