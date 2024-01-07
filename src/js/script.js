@@ -10,7 +10,7 @@ if (userYearOfBirth === null || userCityResidence === null || userKindSport === 
         (userKindSport === null ? ((userYearOfBirth === null || userCityResidence === null) ? ", " : "") +
             "улюблений вид спорту" : "") + ".");
 } else {
-    const userAge = 2024 - parseInt(userYearOfBirth);
+    const userAge = new Date().getFullYear() - parseInt(userYearOfBirth);
 
     let message = "Твій вік: " + userAge + " р.\n";
 
