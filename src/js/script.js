@@ -2,16 +2,23 @@
 
 const a = prompt('Введіть а');
 
-const results = a === 0 ? 'Вірно' :
-               a > 0 ? 'Вірно' :
-               a < 0 ? 'Вірно' :
-               a >= 0 ? 'Вірно' :
-               a <= 0 ? 'Вірно' :
-               a !== 0 ? 'Вірно' :
-               a === 'test' ? 'Вірно' :
-               Number(a) === 1 ? 'Вірно' :
-               (Number(a) > 0 && Number(a) < 5) ? 'Вірно' : 'Невірно';
-console.log(results);
+a === 0 ? console.log('Вірно') : console.log('Невірно');
+
+a > 0 ? console.log('Вірно') : console.log('Невірно');
+
+a < 0 ? console.log('Вірно') : console.log('Невірно');
+
+a >= 0 ? console.log('Вірно') : console.log('Невірно');
+
+a <= 0 ? console.log('Вірно') : console.log('Невірно');
+
+a !== 0 ? console.log('Вірно') : console.log('Невірно');
+
+a === 'test' ? console.log('Вірно') : console.log('Невірно');
+
+a === '1' ? console.log('Вірно') : console.log('Невірно');
+
+(Number(a) > 0 && Number(a) < 5) ? console.log('Вірно') : console.log('Невірно');
 
 const b = prompt('Введіть b');
 
@@ -26,15 +33,20 @@ const num = +prompt('Введіть одне з значень : 1, 2, 3, 4');
 let result;
 
 switch (num) {
-    case 1 : result = 'Зима';
-    break;
-    case 2 : result ='Весна';
-    break;
-    case 3 : result = 'Літо';
-    break;
-    case 4 : result = 'Осінь';
-    break;
-    default : result = 'Немає такої пори року'
+    case 1 :
+        result = 'Зима';
+        break;
+    case 2 :
+        result = 'Весна';
+        break;
+    case 3 :
+        result = 'Літо';
+        break;
+    case 4 :
+        result = 'Осінь';
+        break;
+    default :
+        result = 'Немає такої пори року'
 }
 
 alert(result);
