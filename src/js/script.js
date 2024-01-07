@@ -4,7 +4,7 @@
 console.log('task1');
 const x = 10;
 const y = 7;
-let result = (x > y) ? 'x більше за y' : 'x не більше, ніж y';
+const result = (x > y) ? 'x більше за y' : 'x не більше, ніж y';
 console.log(result);
 
 //task3
