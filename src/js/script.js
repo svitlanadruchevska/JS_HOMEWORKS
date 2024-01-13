@@ -26,7 +26,7 @@ if (customNum <= 1) {
 } else {
     let primeNum = true;
     for (let i = 2; i <= Math.sqrt(customNum); i++) {
-        if (customNum % i === 0) {
+        if (customNum % i !== 0) {
             primeNum = false;
             break;
         }
