@@ -24,17 +24,17 @@ const customNum = +prompt('Будь ласка, введіть будь-яке �
 if (customNum <= 1) {
     console.log('Число ' + customNum + 'не є простим');
 } else {
-    let primeNum = true;
+    let primeNum = false;
     for (let i = 2; i <= Math.sqrt(customNum); i++) {
-        if (customNum % i !== 0) {
-            primeNum = false;
+        if (customNum % i === 0) {
+            primeNum = true;
             break;
         }
     }
     if (primeNum) {
-        console.log('Число ' + customNum + ' є простим');
-    } else {
         console.log('Число ' + customNum + ' не є простим');
+    } else {
+        console.log('Число ' + customNum + ' є простим');
     }
 }
 
