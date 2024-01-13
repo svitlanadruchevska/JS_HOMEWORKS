@@ -9,7 +9,7 @@ function exponentiation(userNum, degree = 1) {
     return  Math.pow(userNum, degree);
 }
 
-let result = exponentiation(userNum, degree);
+const result = exponentiation(userNum, degree);
 alert('Результат приведення числа ' + userNum + ' в ' + degree + ' ступінь : ' + result);
 
 
