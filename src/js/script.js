@@ -1,5 +1,5 @@
 'use strict';
-const randomNum = function (num = 100) {
+const randomNumGenerate = function (num = 100) {
     let usedNumbers = [];
     const selection = function () {
         if (usedNumbers.length === num) {
@@ -13,6 +13,9 @@ const randomNum = function (num = 100) {
             return result;
         }
     }
-    return selection();
+    return selection;
 }
+
+const randomNum = randomNumGenerate();
+
 console.log(randomNum());
