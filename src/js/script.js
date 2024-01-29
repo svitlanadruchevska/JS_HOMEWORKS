@@ -11,7 +11,9 @@ const parseUrl = function (url) {
     pathname: parsedUrl.pathname,
     search: parsedUrl.search,
     hash: parsedUrl.hash,
-    origin: parsedUrl.origin
+    origin: parsedUrl.origin,
+    password: parsedUrl.password,
+    port: parsedUrl.port
   };
 }
 const url = 'https://example.com:8080/path/name?query=123#hash';
