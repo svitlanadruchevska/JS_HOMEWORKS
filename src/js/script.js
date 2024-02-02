@@ -26,7 +26,7 @@ console.log(lastIndexOf(arr, 'dog'));
 console.log(lastIndexOf(arr, 'giraffe'));
 
 const find = function (arr, callback) {
-  for (let i = 0; i <= arr.length; i += 1) {
+  for (let i = 0; i < arr.length; i += 1) {
     if (callback(arr[i])) {
       return arr[i];
     }
@@ -40,7 +40,7 @@ const resultFind = find(arr, function (element) {
 console.log(resultFind);
 
 const findIndex = function (arr, callback) {
-  for (let i = 0; i <= arr.length; i += 1) {
+  for (let i = 0; i < arr.length; i += 1) {
     if (callback(arr[i])) {
       return i;
     }
@@ -54,7 +54,7 @@ const resultFindIndex = findIndex(arr, function (element) {
 console.log(resultFindIndex);
 
 const includes = function (arr, searchElement) {
-  for (let i = 0; i <= arr.length; i += 1) {
+  for (let i = 0; i < arr.length; i += 1) {
     if (arr[i] === searchElement) {
       return true;
     }
@@ -66,7 +66,7 @@ console.log(includes(arr, 'dog'));
 console.log(includes(arr, 'giraffe'));
 
 const every = function (arr, callback) {
-  for (let i = 0; i <= arr.length; i += 1) {
+  for (let i = 0; i < arr.length; i += 1) {
     if (!callback(arr[i], i, arr)) {
       return false;
     }
@@ -81,7 +81,7 @@ const allElements = every(arr, function (elements) {
 console.log(allElements);
 
 const some = function (arr, callback) {
-  for (let i = 0; i <= arr.length; i += 1) {
+  for (let i = 0; i < arr.length; i += 1) {
     if (callback(arr[i], i, arr)) {
       return true;
     }
