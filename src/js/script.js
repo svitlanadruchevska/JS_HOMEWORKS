@@ -76,7 +76,7 @@ const every = function (arr, callback) {
 
 const allElements = every(arr, function (elements) {
   return elements === 'duck';
-})
+});
 
 console.log(allElements);
 
@@ -91,6 +91,6 @@ const some = function (arr, callback) {
 
 const someElements = some(arr, function (elements) {
   return elements === 'duck';
-})
+});
 
 console.log(someElements);
