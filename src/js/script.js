@@ -13,7 +13,7 @@ const indexOf = function (arr, searchElement, fromIndex = 0) {
 console.log(indexOf(arr, 'dog'));
 console.log(indexOf(arr, 'giraffe'));
 
-const lastIndexOf = function (arr, searchElement, fromIndex = arr.length - 1) {
+const lastIndexOf = function (arr, searchElement, fromIndex) {
   for (let i = fromIndex; i >= 0; i -= 1) {
     if (arr[i] === searchElement) {
       return i;
