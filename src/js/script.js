@@ -2,13 +2,16 @@
 
 const arr = ['cat', 'dog', 'turtle', 'monkey', 'duck', 'dog'];
 
-const wordRepeat = arr.reduce(function (accumulator, currentValue) {
-  if (!accumulator[currentValue]) {
-    accumulator[currentValue] = 1;
-  } else {
-    accumulator[currentValue]++;
+const reduce = function (array, callback, accumulator) {
+  for (let i = 0; i < array.length; i++) {
+    accumulator = callback(accumulator, array[i], i, array);
   }
   return accumulator;
-}, []);
+};
 
-console.log(wordRepeat);
+const result = reduce(arr, function (acc, current) {
+  acc[current] = (acc[current] || 0) + 1;
+  return acc;
+}, {});
+
+console.log(result);
