@@ -1,7 +1,7 @@
 'use strict';
 
-const newArr = function (arr) {
-  if (arguments.length > 1) {
+const newArr = function (arr, ...arrAll) {
+  if (arrAll.length > 1) {
     throw new Error('Function accepts only 1 argument, too much arguments provided');
   }
   const result = [];
