@@ -17,7 +17,6 @@ const newArr = function (arr, ...arrAll) {
   }
 
   flatArr(arr);
-
   return result;
 };
 
