@@ -25,3 +25,22 @@ const discount = (products) => {
 };
 
 console.log(discount(products));
+
+const students = [
+  {
+    name: 'Анна',
+    rating: 89
+  },
+  {
+    name: 'Іван',
+    rating: 95
+  },
+  {
+    name: 'Марія',
+    rating: 100
+  }
+];
+
+const topStudents = students.filter(student => student.rating > 90);
+
+console.log(topStudents);
