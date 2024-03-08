@@ -8,6 +8,8 @@
         "ecmaVersion": "latest"
     },
     "rules": {
-        "semi": "off"
+        "semi": "off",
+        "wrap-iife": ["error", "inside"],
+        "func-names": ["error", "never"]
     }
 }
