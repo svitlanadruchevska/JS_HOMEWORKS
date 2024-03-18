@@ -20,11 +20,13 @@
     const surveyOptionsDisplay = document.getElementById('surveyOptionsDisplay');
     surveyNameDisplay.textContent = 'Назва опитування: ' + titleInput.value;
     surveyOptionsDisplay.innerHTML = '';
+
     fieldsetValues.forEach(function (option) {
       const li = document.createElement('li');
       li.textContent = option;
       surveyOptionsDisplay.appendChild(li);
     });
+
     document.getElementById('surveyResult').style.display = 'block';
     form.reset();
     fieldsetCount = 1;
