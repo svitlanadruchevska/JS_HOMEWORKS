@@ -1,13 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>HomeworkJS</title>
-    <link rel="stylesheet" href="./styles/style.css">
+  <meta charset="UTF-8">
+  <title>HomeworkJS</title>
+  <link rel="stylesheet" href="./styles/style.css">
 </head>
-<body>
-
-
+<style>
+    .error {
+        color: red;
+    }
+</style>
+<body style="color:black; background:lightsteelblue; position: absolute">
+<form id="surveyForm">
+  Опитування
+  <p>
+    <label>Назва опитування </label><br>
+    <input type="text" id="surveyName" name="surveyName" placeholder="Введіть назву опитування">
+  <div id="optionsContainer">
+    <label for="option1"> Варіант відповіді 1:</label><br>
+    <input type="text" id="option1" name="option1" placeholder="Варіант відповіді" required>
+  </div>
+  <br>
+  <button type="button" id="addOptionButton">Додати варіант відповіді</button>
+  <p>
+    <button type="submit">Створити опитування</button>
+  <div id="surveyResult" style="display: none;">
+    <p id="surveyNameDisplay"></p>
+    <ul id="surveyOptionsDisplay"></ul>
+  </div>
+</form>
+<br>
+<div id="error" class="error"></div>
 <script src="./js/script.js"></script>
 </body>
 </html>
